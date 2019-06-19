@@ -1,0 +1,12 @@
+background_b: 255
+background_g: 86
+background_r: 150
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_alberto_gp60_2qe__46321: 'http://alberto-GP60-2QE:46321/'}
+rosversion: '1.14.3
+
+  '
+run_id: dc5754f0-90e2-11e9-9dc4-f4066953ade0
