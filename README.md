@@ -2,16 +2,27 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+
+## Table of Contents
+1. [Introduction](#intro)
+2. [Settings](#set)
+3. [Building a ROS package](#build)
+4. [Installation](#installation)
+
+<a name="intro"></a>
+## Introduction
 This is a package that follows the official ROS tutorial, specifically the beginner level.
 In the next link you can find the website where there is the tutorial: [ROS_TUTORIALS][ros_tuto]
 Here we will see how we use a ROS package exporting from github to our local terminal.
 
-# Settings
+<a name="set"></a>
+## Settings
 This section will show the settings from the laptop where this package was created, built, installed and tested.
    - OS System: Ubuntu 18.04
    - ROS version: Melodic
 
-# Build this ROS package
+<a name="build"></a>
+## Build this ROS package
 Here, we will see which are the steps for building this ROS package, and their considerations.
 
 Create your ROS environment:
@@ -113,6 +124,14 @@ Now, it should compile well:
 ```sh
 $ cd ~/catkin_ws/
 $ catkin_make
+```
+
+<a name="installation"></a>
+## Installation
+For installing this package in your workspace:
+```sh
+$ cd ~/catkin_ws/
+$ catkin_make_install
 ```
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
