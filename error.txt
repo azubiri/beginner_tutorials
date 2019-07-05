@@ -1,0 +1,60 @@
+Error:
+----------------------------------------------------
+Compilation error when import a package from github:
+----------------------------------------------------
+
+ssh user@xxx.yyy.zz.kk 'cd Documents;ls -l;'
+Base path: /home/alberto/catkin_ws
+Source space: /home/alberto/catkin_ws/src
+Build space: /home/alberto/catkin_ws/build
+Devel space: /home/alberto/catkin_ws/devel
+Install space: /home/alberto/catkin_ws/install
+####
+#### Running command: "cmake /home/alberto/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/alberto/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/alberto/catkin_ws/install -G Unix Makefiles" in "/home/alberto/catkin_ws/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/alberto/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/alberto/catkin_ws/devel;/opt/ros/melodic
+-- This workspace overlays: /home/alberto/catkin_ws/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.15", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/alberto/catkin_ws/build/test_results
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.15") 
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.17
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - beginner_tutorials
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'beginner_tutorials'
+-- ==> add_subdirectory(beginner_tutorials)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- beginner_tutorials: 1 messages, 1 services
+CMake Warning at /opt/ros/melodic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'system_lib' but neither
+  'system_lib_INCLUDE_DIRS' nor 'system_lib_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/melodic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  beginner_tutorials/CMakeLists.txt:104 (catkin_package)
+
+
+CMake Error at /opt/ros/melodic/share/catkin/cmake/catkin_package.cmake:304 (message):
+  catkin_package() include dir 'include' does not exist relative to
+  '/home/alberto/catkin_ws/src/beginner_tutorials'
+Call Stack (most recent call first):
+  /opt/ros/melodic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  beginner_tutorials/CMakeLists.txt:104 (catkin_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/alberto/catkin_ws/build/CMakeFiles/CMakeOutput.log".
+See also "/home/alberto/catkin_ws/build/CMakeFiles/CMakeError.log".
+Invoking "cmake" failed
+
